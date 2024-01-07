@@ -66,10 +66,9 @@ var Tanalytics = class {
       message: options?.message
     };
     const config = {
-      headers: this.headers,
-      body: event
+      headers: this.headers
     };
-    return import_axios.default.post(API_ENDPOINT, config);
+    return import_axios.default.post(API_ENDPOINT, event, config);
   }
   sendLogin(options) {
     return this.send("login" /* login */, options);
