@@ -34,6 +34,19 @@ __export(src_exports, {
 });
 module.exports = __toCommonJS(src_exports);
 var import_axios = __toESM(require("axios"));
+
+// src/utils/string/generateRandomString.ts
+var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+function generateRandomString(length = 10) {
+  let result = " ";
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
+}
+
+// src/index.ts
 var API_ENDPOINT = "https://tanalytics.ru/api/v1/events";
 var Tanalytics = class {
   constructor(apiKey) {

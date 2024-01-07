@@ -17,22 +17,10 @@ var __copyProps = (to, from, except, desc) => {
 };
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// src/utils/string/generateRandomString.ts
-var generateRandomString_exports = {};
-__export(generateRandomString_exports, {
-  generateRandomString: () => generateRandomString
+// src/index.d.ts
+var index_d_exports = {};
+__export(index_d_exports, {
+  default: () => index_d_default
 });
-module.exports = __toCommonJS(generateRandomString_exports);
-var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-function generateRandomString(length = 10) {
-  let result = " ";
-  const charactersLength = characters.length;
-  for (let i = 0; i < length; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-  }
-  return result;
-}
-// Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {
-  generateRandomString
-});
+module.exports = __toCommonJS(index_d_exports);
+var index_d_default = Tanalytics;
