@@ -1,0 +1,30 @@
+{
+  "name": "tanalytics-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsup src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WernherVonDown/tanalytics-sdk.git"
+  },
+  "keywords": [
+    "tanalytics"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WernherVonDown/tanalytics-sdk/issues"
+  },
+  "homepage": "https://github.com/WernherVonDown/tanalytics-sdk#readme",
+  "devDependencies": {
+    "ts-node": "10.9.2",
+    "tsup": "8.0.1",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "axios": "1.6.5"
+  }
+}
