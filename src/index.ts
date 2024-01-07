@@ -47,9 +47,8 @@ class Tanalytics {
         }
         const config = {
             headers: this.headers,
-            body: event,
         }
-        return axios.post(API_ENDPOINT, config)
+        return axios.post(API_ENDPOINT, event, config)
     }
 
     public sendLogin(options?: IEventOptions) {
